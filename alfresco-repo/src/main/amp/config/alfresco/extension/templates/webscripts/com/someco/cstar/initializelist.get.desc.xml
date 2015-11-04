@@ -1,0 +1,8 @@
+<webscript>
+  <shortname>CSTAR Initialize</shortname>
+  <description>Populate CSTAR Datalist</description>
+  <url>/someco/cstar/initializelist</url>
+  <format default="json">extension</format>
+  <authentication runas="admin">none</authentication>
+  <transaction>required</transaction>
+</webscript>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<!--
+	Licensed to the Apache Software Foundation (ASF) under one or more
+	contributor license agreements.  See the NOTICE file distributed with
+	this work for additional information regarding copyright ownership.
+	The ASF licenses this file to You under the Apache License, Version 2.0
+	(the "License"); you may not use this file except in compliance with
+	the License.  You may obtain a copy of the License at
+	
+	http://www.apache.org/licenses/LICENSE-2.0
+	
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+<beans>
+	<bean id="webscript.helloworld.get"
+		  class="com.someco.alfresco_repo.demoamp.HelloWorldWebScript"
+		  parent="webscript">
+	</bean>
+	
+	<!-- Webscripts -->
+	  <bean id="ratingBean" class="com.someco.beans.RatingBean">
+        <property name="nodeService">
+            <ref bean="NodeService" />
+        </property>
+    </bean>
+
+    <bean id="webscript.com.someco.ratings.rating.post" class="com.someco.scripts.PostRating" parent="webscript">
+    	<property name="ratingBean">
+    		<ref bean="ratingBean" />    	
+        </property>
+        <property name="nodeService">
+            <ref bean="NodeService" />
+        </property>
+    </bean>
+    
+    <!-- Workflow Tutorials -->
+	<bean id="webscript.com.someco.bpm.review.get" class="com.someco.scripts.GetReview"
+		parent="webscript">
+		<property name="workflowService">
+			<ref bean="WorkflowService" />
+		</property>
+	</bean>
+    
+    <bean id="webscript.com.someco.cstar.initializelist.get" class="com.someco.scripts.InitializeList"
+		parent="webscript">
+		<property name="nodeService">
+			<ref bean="NodeService" />
+		</property>
+		<property name="siteService">
+			<ref bean="siteService" />
+		</property>
+		<property name="contentService">
+			<ref bean="contentService" />
+		</property>
+		<property name="serviceRegistry">
+			<ref bean="ServiceRegistry" />
+		</property>
+	</bean>
+
+	
+	<bean id="webscript.com.someco.cstar.fdasearch.get" class="com.someco.scripts.FDASearch" parent="webscript">
+		<property name="nodeService">
+			<ref bean="NodeService" />
+		</property>
+		<property name="siteService">
+			<ref bean="siteService" />
+		</property>
+		<property name="fdaServiceImpl">
+			<ref bean="alfresco-repo.fdaServiceImpl" />
+		</property>
+	</bean>
+	
+	
+</beans>
