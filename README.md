@@ -9,7 +9,7 @@ This is part of a training module for Alfresco development. This repository will
 ---
 ## Quick Start Guide
 ### TODO
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada volutpat felis, a cursus dolor vestibulum a. Suspendisse potenti. Praesent sed felis sollicitudin, blandit massa eget, tempor dui. Nullam at vulputate metus. Phasellus consequat elit ut tellus dapibus placerat. Nulla auctor est massa, venenatis placerat dolor ullamcorper a. Sed gravida sapien a mi bibendum rutrum. Donec a congue lorem. Pellentesque congue elit et nisi mattis ultricies. Praesent volutpat vehicula eros, vestibulum interdum magna vulputate id.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada volutpat felis, a cursus dolor vestibulum a. Suspendisse potenti. Praesent sed felis sollicitudin, blandit massa eget, tempor dui. Nullam at vulputate metus. Phasellus consequat elit ut tellus dapibus placerat. Nulla auctor est massa, venenatis placerat dolor ullamcorper a. Sed gravida sapien a mi bibendum rutrum. Donec a congue lorem. Pellentesque congue elit et nisi mattis ultricies. Praesent volutpat vehicula eros, vestibulum interdum magna vulputate id.
 ---
 ## Version
 - 1.2.0
@@ -33,13 +33,13 @@ Things you should be familiar with include:
 ## Installation
 
 #### TODO
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada volutpat felis, a cursus dolor vestibulum a. Suspendisse potenti. Praesent sed felis sollicitudin, blandit massa eget, tempor dui. Nullam at vulputate metus. Phasellus consequat elit ut tellus dapibus placerat. Nulla auctor est massa, venenatis placerat dolor ullamcorper a. Sed gravida sapien a mi bibendum rutrum. Donec a congue lorem. Pellentesque congue elit et nisi mattis ultricies. Praesent volutpat vehicula eros, vestibulum interdum magna vulputate id.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada volutpat felis, a cursus dolor vestibulum a. Suspendisse potenti. Praesent sed felis sollicitudin, blandit massa eget, tempor dui. Nullam at vulputate metus. Phasellus consequat elit ut tellus dapibus placerat. Nulla auctor est massa, venenatis placerat dolor ullamcorper a. Sed gravida sapien a mi bibendum rutrum. Donec a congue lorem. Pellentesque congue elit et nisi mattis ultricies. Praesent volutpat vehicula eros, vestibulum interdum magna vulputate id.
 ---
 ## IDE
 
 #### TODO
 
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada volutpat felis, a cursus dolor vestibulum a. Suspendisse potenti. Praesent sed felis sollicitudin, blandit massa eget, tempor dui. Nullam at vulputate metus. Phasellus consequat elit ut tellus dapibus placerat. Nulla auctor est massa, venenatis placerat dolor ullamcorper a. Sed gravida sapien a mi bibendum rutrum. Donec a congue lorem. Pellentesque congue elit et nisi mattis ultricies. Praesent volutpat vehicula eros, vestibulum interdum magna vulputate id.
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada volutpat felis, a cursus dolor vestibulum a. Suspendisse potenti. Praesent sed felis sollicitudin, blandit massa eget, tempor dui. Nullam at vulputate metus. Phasellus consequat elit ut tellus dapibus placerat. Nulla auctor est massa, venenatis placerat dolor ullamcorper a. Sed gravida sapien a mi bibendum rutrum. Donec a congue lorem. Pellentesque congue elit et nisi mattis ultricies. Praesent volutpat vehicula eros, vestibulum interdum magna vulputate id.
 
 ---
 ## Todos
