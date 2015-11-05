@@ -35,16 +35,6 @@
 			<action name="link-category"/>
 		</group>
 		<group>
-			<action name="add-features"/>
-			<action name="remove-features"/>
-		</group>
-		<group>
-			<action name="simple-workflow"/>
-		</group>
-		<group>
-			<action name="mail"/>
-		</group>
-		<group>
 			<action name="transform"/>
 			<action name="transform-image"/>
 		</group>
@@ -61,9 +51,6 @@
 			<action name="specialise-type"/>
 		</group>
 		<group>
-			<action name="counter"/>
-		</group>
-		<group>
             <action name="set-property-value"/>
         </group>
         <group>
@@ -74,15 +61,11 @@
    <customise>
       <item id="select">Select</item>
       <action name="specialise-type">SpecialiseType</action>
-      <action name="add-features">AddFeatures</action>
-      <action name="remove-features">RemoveFeatures</action>
       <action name="check-in">CheckIn</action>
       <action name="check-out">Checkout</action>
       <action name="copy">Copy</action>
       <action name="move">Move</action>
-      <action name="move-replaced">MoveReplaced</action>      
-      <action name="simple-workflow">SimpleWorkflow</action>
-      <action name="mail">Mail</action>
+      <action name="move-replaced">MoveReplaced</action>
       <action name="link-category">LinkCategory</action>
       <action name="script">Script</action>
       <action name="transform">Transform</action>
