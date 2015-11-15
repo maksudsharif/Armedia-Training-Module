@@ -19,9 +19,6 @@ import com.someco.model.SomeCoModel;
 
 public class SetReviewable extends ActionExecuterAbstractBase {
 	
-	
-	
-    
 	public final static String NAME = "set-reviewable";
 	public final static String PARAM_FLAG = "reviewFlag";
 	
@@ -32,34 +29,7 @@ public class SetReviewable extends ActionExecuterAbstractBase {
 	
 	@Override
 	protected void executeImpl(Action action, NodeRef actionedUponNodeRef) {
-			
-		Boolean activeFlag = (Boolean)action.getParameterValue(PARAM_FLAG);
-
-		if (activeFlag == null) activeFlag = true;
-		
-		if (logger.isDebugEnabled()) logger.debug("Inside executeImpl");
-					
-		// set the sc:isActive property to true
-		// set the sc:published property to now
-		Map<QName, Serializable> properties = nodeService.getProperties(actionedUponNodeRef);
-		properties.put(QName.createQName(SomeCoModel.NAMESPACE_SOMECO_CONTENT_MODEL, SomeCoModel.PROP_REVIEW_FLAG), activeFlag);
-		  
-		
-		// if the aspect has already been added, set the properties
-		if (nodeService.hasAspect(actionedUponNodeRef,
-				 QName.createQName(
-						SomeCoModel.NAMESPACE_SOMECO_CONTENT_MODEL,
-						SomeCoModel.ASPECT_SC_TECH_REVIEWABLE))) {
-			if (logger.isDebugEnabled()) logger.debug("Node has aspect");
-			nodeService.setProperties(actionedUponNodeRef, properties);
-		} else {
-			// otherwise, add the aspect and set the properties
-			if (logger.isDebugEnabled()) logger.debug("Node does not have aspect");
-			nodeService.addAspect(actionedUponNodeRef, QName.createQName(SomeCoModel.NAMESPACE_SOMECO_CONTENT_MODEL, SomeCoModel.ASPECT_SC_TECH_REVIEWABLE), properties);
-		}                  
-				
-		if (logger.isDebugEnabled()) logger.debug("Ran web enable/disable action");
-                                 
+			//TODO: Implement Review Flag Action
 	}
 
 	@Override

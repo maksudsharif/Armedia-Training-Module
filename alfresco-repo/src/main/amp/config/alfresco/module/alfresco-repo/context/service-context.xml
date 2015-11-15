@@ -17,60 +17,6 @@
     limitations under the License.
 -->
 <beans>
-
-    <bean id="alfresco-repo.actionResourceBundles" parent="actionResourceBundles">
-        <property name="resourceBundles">
-            <list>
-                <value>alfresco.module.${project.artifactId}.messages.scAction</value>
-            </list>
-        </property>
-    </bean>
-    
-        
-    <!-- Actions Tutorial -->
-     <bean id="move-replaced" class="com.someco.action.executer.MoveReplacedActionExecuter" parent="action-executer">
-		<property name="fileFolderService">
-			<ref bean="FileFolderService" />
-		</property>
-		<property name="nodeService">
-			<ref bean="NodeService" />
-		</property>
-	</bean>
-
-    <bean id="set-web-flag" class="com.someco.action.executer.SetWebFlag" parent="action-executer">
-        <property name="nodeService">
-            <ref bean="NodeService" />
-        </property>
-    </bean>
-    <bean id="set-reviewable" class="com.someco.action.executer.SetReviewable" parent="action-executer">
-    	<property name="nodeService">
-    		<ref bean="NodeService" />
-    	</property>
-    </bean>
-
-    <bean id="enable-web-flag" class="com.someco.action.executer.EnableWebFlag" parent="set-web-flag">
-        <property name="publicAction">
-            <value>false</value>
-        </property>
-    </bean>
-    <bean id="enable-reviewable" class="com.someco.action.executer.EnableReviewable" parent="set-reviewable">
-        <property name="publicAction">
-            <value>false</value>
-        </property>
-    </bean>
-
-	<bean id="disable-web-flag" class="com.someco.action.executer.DisableWebFlag" parent="set-web-flag">
-        <property name="publicAction">
-            <value>false</value>
-        </property>
-    </bean>
-    
-    <bean id="disable-reviewable" class="com.someco.action.executer.DisableReviewable" parent="set-reviewable">
-        <property name="publicAction">
-            <value>false</value>
-        </property>
-    </bean>
-    
 	<bean id="sandbox" class="com.someco.sandbox.Sandbox">
 		<property name="serviceRegistry">
 			<ref bean="ServiceRegistry" />
@@ -81,6 +27,5 @@
 		<property name="siteService">
 			<ref bean="siteService" />
 		</property>
-	</bean>
-	
+	</bean>	
 </beans>

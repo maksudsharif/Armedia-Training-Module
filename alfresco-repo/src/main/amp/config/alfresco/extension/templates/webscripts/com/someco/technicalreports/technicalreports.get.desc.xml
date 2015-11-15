@@ -1,9 +1,0 @@
-<webscript>
-    <shortname>Get all Technical Reports</shortname>
-    <description>Returns a list of active Technical Reports</description>
-    <url>/someco/technicalreports</url>
-    <url>/someco/technicalreports.json</url>
-    <format default="json">extension</format>
-    <authentication>guest</authentication>
-    <transaction>none</transaction>
-</webscript>

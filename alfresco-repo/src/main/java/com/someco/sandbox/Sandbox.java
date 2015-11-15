@@ -58,39 +58,6 @@ public class Sandbox extends DeclarativeWebScript
 
 
 	public static void main(String[] argv) {
-		// Try to find the datalist they requested
-		NodeRef list;
-		if(serviceRegistry == null) {
-			System.out.println("null");
-		}
-		// Get the site
-		SiteInfo site = siteService.getSite("training");
-		if(site == null)
-		{
-			System.out.println("Site is null");
-		}
-
-		// Now find the data list container with in
-		NodeRef container = nodeService.getChildByName(
-				site.getNodeRef(),
-				ContentModel.ASSOC_CONTAINS,
-				"dataLists"
-				);
-		if(container == null)
-		{
-			System.out.println("Container is null");
-		}
-
-		// Now get the data list itself
-		list = nodeService.getChildByName(
-				container,
-				ContentModel.ASSOC_CONTAINS,
-				"a111da37-81ca-4eb5-a480-dd86ac4ba753"
-				);
-
-		if(list == null || !nodeService.exists(list))
-		{
-			System.out.println("Datalist is null or not found");
-		}
+		//Testing for beans/logic
 	}
 }

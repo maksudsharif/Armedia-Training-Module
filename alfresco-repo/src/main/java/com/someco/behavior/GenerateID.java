@@ -53,19 +53,11 @@ public class GenerateID implements NodeServicePolicies.OnCreateNodePolicy {
 	 */
 	@Override
 	public void onCreateNode(ChildAssociationRef childAssocRef) {
-		NodeRef node = childAssocRef.getChildRef();
-		if(nodeService.exists(node)){
-			if(!nodeService.hasAspect(node, SomeCoModel.ASPECT_SC_IDENTIFIABLE_QNAME)){
-				Map<QName, Serializable> properties = new HashMap<QName, Serializable>();
-				properties.put(SomeCoModel.DOCUMENT_ID_QNAME, generateID());
-				nodeService.addAspect(node, SomeCoModel.ASPECT_SC_IDENTIFIABLE_QNAME, properties);
-			}
-		}
+		//TODO: Implement onCreateNode for Generating IDs for all content created.
 	}
 
 	private String generateID() {
-		String id = UUID.randomUUID().toString().substring(0, 9).toUpperCase();
-
-		return id.substring(0, 9);
+		//TODO: Implement logic for creating an unique ID for content.
+		return "";
 	}
 }
