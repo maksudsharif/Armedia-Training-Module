@@ -1,5 +1,0 @@
-{"initialize result" : 
-        {
-         "status" : "${status}"
-        }
-}
