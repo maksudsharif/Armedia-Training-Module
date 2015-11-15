@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://activiti.org/bpmn20" id="review-definitions">
+  <process id="flagForReview" name="Flag for Review" isExecutable="true">
+    <startEvent id="start" activiti:formKey="wf:submitGroupReviewTask"></startEvent>
+    <sequenceFlow id="flow1" sourceRef="start" targetRef="reviewTask"></sequenceFlow>
+    <userTask id="reviewTask" name="Review Task" activiti:candidateGroups="GROUP_COORDINATOR" activiti:formKey="wf:activitiReviewTask">
+      <extensionElements>
+        <activiti:taskListener event="create" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+          <activiti:field name="script">
+            <activiti:string><![CDATA[if (typeof bpm_workflowDueDate != 'undefined') task.setVariable('bpm_dueDate', bpm_workflowDueDate);
+                        if (typeof bpm_workflowPriority != 'undefined') task.priority = bpm_workflowPriority;
+var desc = task.getVariable('bpm_workflowDescription');
+desc = "Submission Notification: "+bpm_package.children[0].name;
+execution.setVariable('bpm_workflowDescription', desc);]]></activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+        <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+          <activiti:field name="script">
+            <activiti:string><![CDATA[execution.setVariable('wf_reviewOutcome', task.getVariable('wf_reviewOutcome'));]]></activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow2" sourceRef="reviewTask" targetRef="reviewDecision"></sequenceFlow>
+    <exclusiveGateway id="reviewDecision" name="Review Decision"></exclusiveGateway>
+    <sequenceFlow id="flow3" sourceRef="reviewDecision" targetRef="approved">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${wf_reviewOutcome == 'Approve'}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="flow4" sourceRef="reviewDecision" targetRef="rejected">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${wf_reviewOutcome == 'Rejected'}]]></conditionExpression>
+    </sequenceFlow>
+    <userTask id="approved" name="Document Approved" activiti:assignee="${initiator.properties.userName}" activiti:formKey="wf:approvedTask">
+      <documentation>The document was reviewed and approved.</documentation>
+      <extensionElements>
+        <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+          <activiti:field name="script">
+            <activiti:string><![CDATA[var props = new Array(1);
+props["sc:reviewFlag"] = true;
+bpm_package.children[0].addAspect("sc:techReviewable", props);]]></activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+        <activiti:taskListener event="create" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+          <activiti:field name="script">
+            <activiti:string><![CDATA[var desc = task.getVariable('bpm_workflowDescription');
+desc = "Document Approve Confirmation: "+bpm_package.children[0].name;
+execution.setVariable('bpm_workflowDescription', desc);]]></activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+      </extensionElements>
+    </userTask>
+    <userTask id="rejected" name="Document Rejected" activiti:assignee="${initiator.properties.userName}" activiti:formKey="wf:rejectedTask">
+      <documentation>The document was reviewed and rejected.</documentation>
+      <extensionElements>
+        <activiti:taskListener event="create" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+          <activiti:field name="script">
+            <activiti:string><![CDATA[if (typeof bpm_workflowDueDate != 'undefined') task.setVariableLocal('bpm_dueDate', bpm_workflowDueDate);
+                        if (typeof bpm_workflowPriority != 'undefined') task.priority = bpm_workflowPriority;
+
+var desc = task.getVariable('bpm_workflowDescription');
+desc = "Document Rejection Confirmation: "+bpm_package.children[0].name;
+execution.setVariable('bpm_workflowDescription', desc);]]></activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+        <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+          <activiti:field name="script">
+            <activiti:string><![CDATA[execution.setVariable('bpm_assignee', person);]]></activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow5" sourceRef="approved" targetRef="end"></sequenceFlow>
+    <sequenceFlow id="flow6" sourceRef="rejected" targetRef="end"></sequenceFlow>
+    <endEvent id="end"></endEvent>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_flagForReview">
+    <bpmndi:BPMNPlane bpmnElement="flagForReview" id="BPMNPlane_flagForReview">
+      <bpmndi:BPMNShape bpmnElement="start" id="BPMNShape_start">
+        <omgdc:Bounds height="35.0" width="35.0" x="30.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="reviewTask" id="BPMNShape_reviewTask">
+        <omgdc:Bounds height="55.0" width="105.0" x="105.0" y="190.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="reviewDecision" id="BPMNShape_reviewDecision">
+        <omgdc:Bounds height="40.0" width="40.0" x="250.0" y="197.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="approved" id="BPMNShape_approved">
+        <omgdc:Bounds height="55.0" width="105.0" x="330.0" y="137.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="rejected" id="BPMNShape_rejected">
+        <omgdc:Bounds height="55.0" width="105.0" x="330.0" y="257.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="end" id="BPMNShape_end">
+        <omgdc:Bounds height="35.0" width="35.0" x="620.0" y="147.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="65.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="105.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="210.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="250.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
+        <omgdi:waypoint x="270.0" y="197.0"></omgdi:waypoint>
+        <omgdi:waypoint x="270.0" y="164.0"></omgdi:waypoint>
+        <omgdi:waypoint x="330.0" y="164.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow4" id="BPMNEdge_flow4">
+        <omgdi:waypoint x="270.0" y="237.0"></omgdi:waypoint>
+        <omgdi:waypoint x="270.0" y="284.0"></omgdi:waypoint>
+        <omgdi:waypoint x="330.0" y="284.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow5" id="BPMNEdge_flow5">
+        <omgdi:waypoint x="435.0" y="164.0"></omgdi:waypoint>
+        <omgdi:waypoint x="620.0" y="164.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow6" id="BPMNEdge_flow6">
+        <omgdi:waypoint x="435.0" y="284.0"></omgdi:waypoint>
+        <omgdi:waypoint x="637.0" y="284.0"></omgdi:waypoint>
+        <omgdi:waypoint x="637.0" y="182.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition of new Model -->
+<model name="cstar:fdacstarmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+	
+	<!-- Imports are required to allow references to definitions in other models -->
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<import uri="http://www.alfresco.org/model/datalist/1.0" prefix="dl" />
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+		<import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>		
+	</imports>
+
+	<!-- Introduction of new namespaces defined by this model -->
+	<namespaces>
+		<namespace uri="http://www.someco.com/model/fda/1.0" prefix="cstar" />
+	</namespaces>
+
+	<types>
+		<type name="cstar:dataList">
+			<title>CSTAR DataList</title>
+			<parent>dl:dataListItem</parent>
+			<properties>
+				<property name="cstar:office">
+					<type>d:text</type>
+					<multiple>false</multiple>
+				</property>
+				<property name="cstar:officeCode">
+					<type>d:text</type>
+					<multiple>false</multiple>
+				</property>
+				<property name="cstar:division">
+					<type>d:text</type>
+					<multiple>false</multiple>
+				</property>
+				<property name="cstar:divisionCode">
+					<type>d:text</type>
+					<multiple>false</multiple>
+				</property>
+				<property name="cstar:branch">
+					<type>d:text</type>
+					<multiple>false</multiple>
+				</property>
+				<property name="cstar:branchCode">
+					<type>d:text</type>
+					<multiple>false</multiple>
+				</property>
+			</properties>
+		</type>
+	</types>
+</model>

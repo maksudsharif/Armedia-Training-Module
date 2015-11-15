@@ -1,0 +1,125 @@
+Office,Office Acronym,Division Name,Division Acronym,Branch  Name,Branch Acronym
+Office of Device Evaluation,ODE,"Division of Anesthesiology, General Hospital, Infection Control, and Dental Devices ",DAGRID,Anesthesiology Devices Branch ,ANDB
+Office of Device Evaluation,ODE,"Division of Anesthesiology, General Hospital, Infection Control, and Dental Devices ",DAGRID,Dental Devices Branch ,DEDB
+Office of Device Evaluation,ODE,"Division of Anesthesiology, General Hospital, Infection Control, and Dental Devices ",DAGRID,Infection Control Devices Branch,INCB
+Office of Device Evaluation,ODE,"Division of Anesthesiology, General Hospital, Infection Control, and Dental Devices ",DAGRID,Respiratory Devices Branch ,RPDB
+Office of Device Evaluation,ODE,"Division of Anesthesiology, General Hospital, Infection Control, and Dental Devices ",DAGRID,Human Factors Pre-Market,HFPMET
+Office of Device Evaluation,ODE,"Division of Anesthesiology, General Hospital, Infection Control, and Dental Devices ",DAGRID,General Hospital Devices Branch,GHDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Cardiac Diagnostics Devices Branch ,CDDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Cardiac Electrophysiology Devices Branch ,CEDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Peripheral Interventional Devices Branch ,PIDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Implantable Electrophysiology Devices Branch,IEDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Circulatory Support Devices Branch ,CSDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Vascular Surgery Devices Branch  ,VSDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Structural Heart Devices Branch ,SHDB
+Office of Device Evaluation,ODE,Division of Cardiovascular Devices ,DCD,Interventional Cardiology Devices Branch ,ICDB
+Office of Device Evaluation,ODE,Division of Neurological and Physical Medicine Devices ,DNPMD,Neurostimulation Devices Branch ,NSDB
+Office of Device Evaluation,ODE,Division of Neurological and Physical Medicine Devices ,DNPMD,Neurodiagnostic and Neurosurgical Devices Branch ,NNDB
+Office of Device Evaluation,ODE,Division of Neurological and Physical Medicine Devices ,DNPMD,Physical Medicine and  Neurotherapueutic  Devices Branch ,PNDB
+Office of Device Evaluation,ODE,"Division of Ophthalmic and Ear, Nose and Throat Devices ",DOED,Contact Lenses and Retinal Devices Branch ,CLRD
+Office of Device Evaluation,ODE,"Division of Ophthalmic and Ear, Nose and Throat Devices ",DOED,Diagnostic and Surgical Devices Branch,DSDB
+Office of Device Evaluation,ODE,"Division of Ophthalmic and Ear, Nose and Throat Devices ",DOED,Intraocular and Corneal Implants Devices Branch ,ICIB
+Office of Device Evaluation,ODE,"Division of Ophthalmic and Ear, Nose and Throat Devices ",DOED,"Ear, Nose, and Throat Devices Branch ",ENTB
+Office of Device Evaluation,ODE,Division of Orthopedic Devices ,DOD,Joint and Fixation Devices Branch One – Knees/Shoulders/Elbows/Ankles/Toes  ,JFDB1
+Office of Device Evaluation,ODE,Division of Orthopedic Devices ,DOD,Joint and Fixation Devices Branch Two – Hips/Wrists/fingers  ,JFDB2
+Office of Device Evaluation,ODE,Division of Orthopedic Devices ,DOD,Restorative and Repair Devices Branch ,RRDB
+Office of Device Evaluation,ODE,Division of Orthopedic Devices ,DOD,Anterior Spine Devices Branch ,ASDB
+Office of Device Evaluation,ODE,Division of Orthopedic Devices ,DOD,Posterior Spine Devices Branch ,PSDB
+Office of Device Evaluation,ODE,"Division of Reproductive, Gastro-Renal, and Urological Devices  ",DRGUD,Obstetrics and Gynecology Devices Branch,OGDB
+Office of Device Evaluation,ODE,"Division of Reproductive, Gastro-Renal, and Urological Devices  ",DRGUD,Urology and Lithotripsy Devices Branch ,ULDB
+Office of Device Evaluation,ODE,"Division of Reproductive, Gastro-Renal, and Urological Devices  ",DRGUD,Gastroenterology Devices Branch ,GEDB
+Office of Device Evaluation,ODE,"Division of Reproductive, Gastro-Renal, and Urological Devices  ",DRGUD,Renal Devices Branch ,RNDB
+Office of Device Evaluation,ODE,Division of Surgical Devices ,DSD,General Surgery Devices Branch One - Light Based/Laser ,GSDB1
+Office of Device Evaluation,ODE,Division of Surgical Devices ,DSD,General Surgery Devices Branch Two - Surgical  ,GSDB2
+Office of Device Evaluation,ODE,Division of Surgical Devices ,DSD,Plastic and Reconstructive Surgery Devices Branch One - Implants and Tools,PRSB1
+Office of Device Evaluation,ODE,Division of Surgical Devices ,DSD,Plastic and Reconstructive Surgery Devices Branch Two - Skin/Wound Dressing/Aesthetic Injectables ,PRSB2
+Office of Device Evaluation,ODE,Program Operations Staff,POS,Investigational Device Exemption Section,IDE
+Office of Device Evaluation,ODE,Program Operations Staff,POS,Premarket Approval Section,PA
+Office of Device Evaluation,ODE,Program Operations Staff,POS,Premarket Notification (510(k)) Section,PNS
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division Of Chemistry And Toxicology Devices,DCTD,Chemistry Branch,CHTB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division Of Chemistry And Toxicology Devices,DCTD,Diabetes Branch,DDDB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division Of Chemistry And Toxicology Devices,DCTD,Toxicology Branch,CTXB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division Of Chemistry And Toxicology Devices,DCTD,Cardio-Renal Diagnostics Branch,CRDB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Immunology And Hematology Devices,DIHD,Henatology Branch,HEMB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Immunology And Hematology Devices,DIHD,Immunology and Flow Cytometry Branch,IMFB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Immunology And Hematology Devices,DIHD,Molecular Pathology and Cytology Branch,PACB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Immunology And Hematology Devices,DIHD,Immunological/Hematological Genetic Disorders Branch,IHGB
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Mammography Quality Standards,DMQS,Program Management Branch,PMBR
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Mammography Quality Standards,DMQS,Information Management Branch,IMBR
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Program Operations And Management,DPOM,,
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Radiological Health,DRH,Magnetic Resonance and Electronic Products Branch,MREP
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Radiological Health,DRH,Diagnostic X-Ray Systems Branch,DXRS
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Radiological Health,DRH,Nuclear Medicine and Radiation Therapy Branch,NMRT
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Division of Radiological Health,DRH,"Mammography, Ultrasound and Imaging Software Branch",MUIS
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Divison of Microbiology Devices,DMD,Viral Respiratory and HPV Branch,VIR1
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Divison of Microbiology Devices,DMD,General Viral and Hepatitis Branch,VIR2
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Divison of Microbiology Devices,DMD,General Bacterial and Antimicrobial Susceptibility Branch,BAC1
+Office Of In Vitro Diagnostics And Radiological Health,OIR,Divison of Microbiology Devices,DMD,Bacterial Respiratory and Medical Countermeasures Branch,BAC2
+Office Of In Vitro Diagnostics And Radiological Health,OIR,"Deputy Director, Patient Safety and Product Quality",DPSPQ,Patient Safety and Product Quality Branch,PSPQB
+Office of Compliance,OC,Division of Bioresearch Monitoring,DBM,Program Enforcement Branch A,PEBA
+Office of Compliance,OC,Division of Bioresearch Monitoring,DBM,Program Enforcement Branch B,PEBB
+Office of Compliance,OC,Division of Bioresearch Monitoring,DBM,Special Investigations Branch,SIB
+Office of Compliance,OC,Division of Import,DIMP,Branch of Import,IMP
+Office of Compliance,OC,Division of Enforcement A,DOEA,"Dental, ENT and Ophthalmic Devices Branch",DEOD
+Office of Compliance,OC,Division of Enforcement A,DOEA,General Hospital Devices Branch,GHDB
+Office of Compliance,OC,Division of Enforcement A,DOEA,General Surgery Devices Branch,GSD
+Office of Compliance,OC,Division of Enforcement A,DOEA,"OB/GYN, Gastro. & Urology Devices Branch",OGUD
+Office of Compliance,OC,Division of Enforcement B,DOEB,Cardiac Rhythm and Electrophysiology Devices Branch,CRED
+Office of Compliance,OC,Division of Enforcement B,DOEB,Orthopedics and  Physical Medicine Devices Branch,OPMD
+Office of Compliance,OC,Division of Enforcement B,DOEB,"Radiology, Anesthesiology and Neurology Devices Branch",RAND
+Office of Compliance,OC,Division of Enforcement B,DOEB,Vascular and Circulatory Support Devices Branch,VCSD
+Office of Compliance,OC,Division of Risk Management Operations,DRMO,Field Programs Branch,FOB
+Office of Compliance,OC,Division of Risk Management Operations,DRMO,Risk Management and Analysis Branch,RB
+Office of Compliance,OC,Division of Risk Management Operations,DRMO,Risk Management and Analysis Branch,RMAB
+Office of Compliance,OC,Division of Risk Management Operations,DRMO,Regulatory Policy and Systems Branch,RPSB
+Office of Compliance,OC,Division of Promotions and Advertizing,PAD,Branch of Promotions and Advertizing,PAB
+Office of Compliance,OC,Quality Systems Division,QSD,Quality Systems Team,QSB
+Office of the Center Director,OCD,Matrix,MATRIX,Cardiac Electrophysiology and Monitoring Network,CEP
+Office of the Center Director,OCD,Matrix,MATRIX,Cardiothoracic and Peripheral Vascular Devices Network,CPVD
+Office of the Center Director,OCD,Matrix,MATRIX,Diagnostics Network,DIAG
+Office of the Center Director,OCD,Matrix,MATRIX,"General Surgery, Physical Medicine, Ob/Gyn Network",GSPMOG
+Office of the Center Director,OCD,Matrix,MATRIX,"Gastroenterology, Urology, Renal Network",GUR
+Office of the Center Director,OCD,Matrix,MATRIX,"Infection Control, Dental, Gen Hosp and Infusion Pump Network",ICDGH
+Office of the Center Director,OCD,Matrix,MATRIX,"Neurology, Anesthesia, Respiratory Network",NAR
+Office of the Center Director,OCD,Matrix,MATRIX,Ophthalmics and ENT Network,OE
+Office of the Center Director,OCD,Matrix,MATRIX,Orthopedics Network,ORTHO
+Office of the Center Director,OCD,Matrix,MATRIX,"Plastic and Reconstructive Surgery, Breast Implants Network",PRSBI
+Office of the Center Director,OCD,Matrix,MATRIX,Regulatory and Special Interests,RASI
+Office of the Center Director,OCD,Matrix,MATRIX,Radiological Products Network,RP
+Office of the Center Director,OCD,Matrix,MATRIX,Science Network,SCI
+Office of the Center Director,OCD,Regulations Division,REGD,,
+Office of the Center Director,OCD,Standards Management Staff,SMS,,
+"Office of Communication, Education, and Radiation Programs",OCER,Division of Communication Media,DCM,,
+"Office of Communication, Education, and Radiation Programs",OCER,Division of Freedom of Information,DFOI,Freedom of Information Branch,FOIB
+"Office of Communication, Education, and Radiation Programs",OCER,Division of Health Communication,DHC,Risk Communications Branch,RCB
+"Office of Communication, Education, and Radiation Programs",OCER,Division of Health Communication,DHC,Web Communications Branch,WCB
+"Office of Communication, Education, and Radiation Programs",OCER,Division of Mammography Quality and Radiation Programs,DMQRP,Diagnostic Devices Branch,DDB
+"Office of Communication, Education, and Radiation Programs",OCER,Division of Mammography Quality and Radiation Programs,DMQRP,Electronic Products Branch,EPB
+"Office of Communication, Education, and Radiation Programs",OCER,"Division of Small Manufacturers, International and Consumer Assistance",DSMICA,International Relations and External Affairs Staff,IREAS
+"Office of Communication, Education, and Radiation Programs",OCER,"Division of Small Manufacturers, International and Consumer Assistance",DSMICA,Regulatory Assistance Branch,RAB
+"Office of Communication, Education, and Radiation Programs",OCER,"Division of Small Manufacturers, International and Consumer Assistance",DSMICA,Technical Assistance Branch,TAB
+"Office of Communication, Education, and Radiation Programs",OCER,Immediate Office of Communication Education and Radiation Program,IOCER,,
+"Office of Communication, Education, and Radiation Programs",OCER,Program Operations Staff,PMO,,
+"Office of Communication, Education, and Radiation Programs",OCER,Regulations Staff,RS,,
+"Office of Communication, Education, and Radiation Programs",OCER,Staff College,SC,,
+Office of Management Operations,OMO,Division of Ethics and Management Operations,DEMO,,
+Office of Surveillance and Biometrics,OSB,Division of Biostatistics,DBS,Cardiovascular and Ophthalmic Devices Branch,CODB
+Office of Surveillance and Biometrics,OSB,Division of Biostatistics,DBS,Diagnostic Devices Branch,DDB
+Office of Surveillance and Biometrics,OSB,Division of Biostatistics,DBS,General Surgical Devices Branch,GSDB
+Office of Surveillance and Biometrics,OSB,Division of Epidemiology,DEPI,Epidemiology Evaluation and Research Branch 1 ,EERB1
+Office of Surveillance and Biometrics,OSB,Division of Epidemiology,DEPI,Epidemiology Evaluation and Research Branch 2 ,EERB2
+Office of Surveillance and Biometrics,OSB,Division of Epidemiology,DEPI,Epidemiology Evaluation and Research Branch 3 ,EERB3
+Office of Surveillance and Biometrics,OSB,Division of Postmarket Surveillance,DPS,Epidemiology Branch,EB
+Office of Surveillance and Biometrics,OSB,Division of Postmarket Surveillance,DPS,Information and Analysis Branch,IAB
+Office of Surveillance and Biometrics,OSB,Division of Postmarket Surveillance,DPS,MDR Policy Branch,MPB
+Office of Surveillance and Biometrics,OSB,Division of Postmarket Surveillance,DPS,Product Evaluation Branch I,PEB1
+Office of Surveillance and Biometrics,OSB,Division of Postmarket Surveillance,DPS,Product Evaluation Branch II,PEB2
+Office of Surveillance and Biometrics,OSB,Division of Patient Safety Partnerships,DPSP,PSB2,PSB2
+Office of Science and Engineering Laboratories,OSEL,Division of Biology,DB,,
+Office of Science and Engineering Laboratories,OSEL,Division of Chemistry and Materials Science,DCMS,,
+Office of Science and Engineering Laboratories,OSEL,Division of Electrical and Software Engineering,DESE,,
+Office of Science and Engineering Laboratories,OSEL,Division of Imaging and Applied Mathematics,DIAM,,
+Office of Science and Engineering Laboratories,OSEL,Division of Physics,DP,,
+Office of Science and Engineering Laboratories,OSEL,Division of Solid and Fluid Mechanics,DSFM,,
+Office of Science and Engineering Laboratories,OSEL,Management Support Staff,MSS,,
+Office of Surface Mining (Department of the Interior),OSM,,,,
