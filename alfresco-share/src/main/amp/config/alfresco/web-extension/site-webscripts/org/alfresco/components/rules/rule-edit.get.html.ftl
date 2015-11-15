@@ -37,7 +37,6 @@
    <@script src="${url.context}/res/components/object-finder/object-finder.js" group="rules"/>
    <@script src="${url.context}/res/modules/form/control-wrapper.js" group="rules"/>
    <!--Custom javascript file include for edit mode -->
-   <@script type="text/javascript" src="${url.context}/res/components/someco/rules/config/rule-config-action-custom.js" group="rules_custom"></@script>
 </@>
 
 <@markup id="widgets">

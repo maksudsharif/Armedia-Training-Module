@@ -24,7 +24,6 @@
 		<group>
 			<action name="copy"/>
 			<action name="move"/>
-			<action name="move-replaced"/>
 		</group>
 		<group>
 			<action name="check-in"/>
@@ -79,8 +78,7 @@
       <action name="check-in">CheckIn</action>
       <action name="check-out">Checkout</action>
       <action name="copy">Copy</action>
-      <action name="move">Move</action>
-      <action name="move-replaced">MoveReplaced</action>      
+      <action name="move">Move</action>   
       <action name="simple-workflow">SimpleWorkflow</action>
       <action name="mail">Mail</action>
       <action name="link-category">LinkCategory</action>
