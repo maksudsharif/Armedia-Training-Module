@@ -25,17 +25,57 @@ Things you should be familiar with include:
   
 
 ## Quick Start Guide
-TODO
+For training assignment:
+* Clone [Armedia Training Module]
+* Import into IDE as a Maven Project
+* Work through tutorials
+
+For completed project:
+* Clone [Armedia Training Demo]
+* Import into IDE as a Maven Project
+* Run mvn clean install integration-test -Pamp-to-war,enterprise
+* Direct browser to localhost:8080/alfresco and localhost:8081/share
 
 ## Installation
+For training assignments:
+ * Clone [Armedia Training Module]
+ * Import as Maven project into IDE
+ * mvn clean install integration-test -Pamp-to-war,enterprise
+ * Refer to FAQ for any issues.
 
-TODO
-
+For the completed project:
+* Clone [Armedia Training Demo]
+* Import as Maven project into IDE
+* mvn clean install integration-test -Pamp-to-war,enterprise
+* Create a new Site: 'FDA'
+* Create user groups: COORDINATOR, ENGINEERING, OPERATIONS, MARKETING, MANAGEMENT
+* Create folder 'Confiuration' in Site Document Library
+* Upload included CSV file to 'Configuration'
+* Create Folder 'Reports' in Site Document Library
+* Create sub-folders: 'Draft', 'Pending', 'Published'
+* Refer to FAQ for any issues.
 
 ## FAQ
+    Q: Which IDE should I use?
+    A: Use whatever you are comfortable with. Any IDE with proper Maven support should work.
 
-TODO
-
+    Q: Artifacts are not found on public?
+    A: Make sure that your Maven installation settings are correct with:
+        - Proper user credentials for Alfresco Private Repository (.m2/settings.xml)
+        Make sure to select 'enterprise' maven profile in the IDE
+    
+    Q: Why can't I see logger/debugger statements?
+    A: Make sure your log4j.properties are correctly set up. Also make sure that you have your maven 
+        command line arguments correctly setup (module.log.level=debug, etc.)
+    
+    Q: My build failed!?
+    A: Check to the console logs for any errors. Common ones include improper maven profiles,                 settings.xml not correctly setup, another application already bound to ports 8080 and 8081.
+    
+    Q: Where can I find the JAVADOCS?
+    A: [Alfresco Javadocs]
+    
+    Q: Help, I'm stuck. Where should I go for everything else?
+    A: Ask your Buddy.
 
 ## Version
 - 1.2.0
@@ -44,8 +84,6 @@ TODO
 
 
  - Finish readme
- - Cleanup code
- - Finish exercise cleanup
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does it's job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
@@ -59,6 +97,9 @@ TODO
    [Maven]: <https://spring.io/guides/gs/maven/>
    [Spring Framework]: <http://spring.io>
    [ECM]: <http://www.aiim.org/What-is-ECM-Enterprise-Content-Management>
+   [Armedia Training Demo]: <https://github.com/maksudsharif/Alfresco-Training-Demo>
+   [Armedia Training Module]: <git@github.com:maksudsharif/Armedia-Training-Module.git>
+   [Alfresco Javadocs]: <http://dev.alfresco.com/resource/docs/java/>
    
   
 
