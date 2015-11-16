@@ -1,6 +1,6 @@
 # Armedia Alfresco Training Module
  
-This is part of a training module for Alfresco development. This repository will contain a completed repo and share amp project for Alfresco 5.0.2.1. Concepts implemented include: 
+This is part of a training module for Alfresco development. This repository will contain a repo and share amp project for Alfresco 5.0.2.1. Concepts implemented include: 
 
   - Content Models
   - Behaviors
