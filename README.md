@@ -1,6 +1,6 @@
 # Armedia Alfresco Training Module
  
-This is part of a training module for Alfresco development. This repository will contain a repo and share amp project for Alfresco 5.0.2.1. Concepts implemented include: 
+This is part of a training module for Alfresco development. This repository will contain a repo and share amp project for Alfresco 5.0.2.1. Concepts discussed include: 
 
   - Content Models
   - Behaviors
@@ -57,7 +57,7 @@ For the completed project:
 
 ## FAQ
     Q: Which IDE should I use?
-    A: Use whatever you are comfortable with. Any IDE with proper Maven support should work.
+    A: Use whatever you are comfortable with. Any IDE with proper Maven support should work.                 For this project, I used STS/Eclipse.
 
     Q: Artifacts are not found on public?
     A: Make sure that your Maven installation settings are correct with:
@@ -79,7 +79,7 @@ For the completed project:
 
 ## Version
 - 1.2.0
-- 
+
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does it's job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
    [CMIS]: <https://www.alfresco.com/cmis>
