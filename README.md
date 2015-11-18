@@ -56,26 +56,32 @@ For the completed project:
 * Refer to FAQ for any issues.
 
 ## FAQ
-    Q: Which IDE should I use?
-    A: Use whatever you are comfortable with. Any IDE with proper Maven support should work.                 For this project, I used STS/Eclipse.
+Q: Which IDE should I use?
 
-    Q: Artifacts are not found on public?
-    A: Make sure that your Maven installation settings are correct with:
+A: Use whatever you are comfortable with. Any IDE with proper Maven support should work.                 For this project, I used STS/Eclipse.
+
+Q: Artifacts are not found on public?
+
+A: Make sure that your Maven installation settings are correct with:
         - Proper user credentials for Alfresco Private Repository (.m2/settings.xml)
         Make sure to select 'enterprise' maven profile in the IDE
     
-    Q: Why can't I see logger/debugger statements?
-    A: Make sure your log4j.properties are correctly set up. Also make sure that you have your maven 
-        command line arguments correctly setup (module.log.level=debug, etc.)
+Q: Why can't I see logger/debugger statements?
     
-    Q: My build failed!?
-    A: Check to the console logs for any errors. Common ones include improper maven profiles,                 settings.xml not correctly setup, another application already bound to ports 8080 and 8081.
+A: Make sure your log4j.properties are correctly set up. Also make sure that you have your maven 
+        command line arguments correctly setup (module.log.level=debug, etc.)
+
+Q: My build failed!?
+
+A: Check to the console logs for any errors. Common ones include improper maven profiles,                 settings.xml not correctly setup, another application already bound to ports 8080 and 8081.
     
 Q: Where can I find the JAVADOCS?
+
 A: [Alfresco Javadocs]
     
-    Q: Help, I'm stuck. Where should I go for everything else?
-    A: Ask your Buddy.
+Q: Help, I'm stuck. Where should I go for everything else?
+
+A: Ask your Buddy.
 
 ## Version
 - 1.2.0
