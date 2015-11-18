@@ -25,6 +25,10 @@ Things you should be familiar with include:
   
 
 ## Quick Start Guide
+Software you'll need: 
+* Maven - <https://maven.apache.org/download.cgi>
+* Java 8 - [Java 8 Download]
+ 
 For training assignment:
 * Clone [Armedia Training Module]
 * Import into IDE as a Maven Project
@@ -101,6 +105,9 @@ A: Ask your Buddy.
    [Armedia Training Demo]: <https://github.com/maksudsharif/Alfresco-Training-Demo>
    [Armedia Training Module]: <git@github.com:maksudsharif/Armedia-Training-Module.git>
    [Alfresco Javadocs]: <http://dev.alfresco.com/resource/docs/java/>
+   
+   [Maven Download]: <https://maven.apache.org/download.cgi>
+   [Java 8]: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
    
   
 
