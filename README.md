@@ -27,7 +27,7 @@ Things you should be familiar with include:
 ## Quick Start Guide
 Software you'll need: 
 * Maven - <https://maven.apache.org/download.cgi>
-* Java 8 - [Java 8]
+* Java 8 - <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
  
 For training assignment:
 * Clone [Armedia Training Module]
