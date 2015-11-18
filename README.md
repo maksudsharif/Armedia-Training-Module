@@ -72,7 +72,7 @@ For the completed project:
     A: Check to the console logs for any errors. Common ones include improper maven profiles,                 settings.xml not correctly setup, another application already bound to ports 8080 and 8081.
     
     Q: Where can I find the JAVADOCS?
-    A: [Alfresco Javadocs]
+    A: [Alfresco Javadocs]<http://dev.alfresco.com/resource/docs/java/>
     
     Q: Help, I'm stuck. Where should I go for everything else?
     A: Ask your Buddy.
