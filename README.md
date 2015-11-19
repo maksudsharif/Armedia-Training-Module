@@ -89,7 +89,7 @@ A: Ask your Buddy.
 
 ## Helpful Links
 * [Armedia Training Demo]
-* [Armedia Training Module Wiki]
+* [Armedia Training Module Wiki](https://github.com/maksudsharif/Armedia-Training-Module/wiki)
 
 ## Version
 - 1.2.0
