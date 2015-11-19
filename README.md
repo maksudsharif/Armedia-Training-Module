@@ -106,7 +106,7 @@ A: Ask your Buddy.
    [Spring Framework]: <http://spring.io>
    [ECM]: <http://www.aiim.org/What-is-ECM-Enterprise-Content-Management>
    [Armedia Training Demo]: <https://github.com/maksudsharif/Alfresco-Training-Demo>
-   [Armedia Training Module]: <git@github.com:maksudsharif/Armedia-Training-Module.git>
+   [Armedia Training Module]: <https://github.com/maksudsharif/Armedia-Training-Module>
    [Alfresco Javadocs]: <http://dev.alfresco.com/resource/docs/java/>
    
    [Maven Download]: <https://maven.apache.org/download.cgi>
