@@ -88,8 +88,8 @@ Q: Help, I'm stuck. Where should I go for everything else?
 A: Ask your Buddy.
 
 ## Helpful Links
-[Armedia Training Demo]
-[Armedia Training Module Wiki]
+* [Armedia Training Demo]
+* [Armedia Training Module Wiki]
 
 ## Version
 - 1.2.0
