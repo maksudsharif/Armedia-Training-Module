@@ -89,6 +89,7 @@ A: Ask your Buddy.
 
 ## Helpful Links
 [Armedia Training Demo]
+[Armedia Training Module Wiki]
 
 ## Version
 - 1.2.0
@@ -107,6 +108,7 @@ A: Ask your Buddy.
    [ECM]: <http://www.aiim.org/What-is-ECM-Enterprise-Content-Management>
    [Armedia Training Demo]: <https://github.com/maksudsharif/Alfresco-Training-Demo>
    [Armedia Training Module]: <https://github.com/maksudsharif/Armedia-Training-Module>
+   [Armeida Training Module Wiki]: <https://github.com/maksudsharif/Armedia-Training-Module/wiki>
    [Alfresco Javadocs]: <http://dev.alfresco.com/resource/docs/java/>
    
    [Maven Download]: <https://maven.apache.org/download.cgi>
